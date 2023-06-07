@@ -25,10 +25,9 @@ public class UserController {
     }
 
 
-    @PostMapping(value = "/registration",consumes=MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
-    public ModelAndView registerUser(@RequestBody User user) throws JsonProcessingException {
-//        ObjectMapper mapper=new ObjectMapper();
-//       User user1= mapper.readValue(user.toString(),User.class);
+    @PostMapping(value = "/registration",
+            consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public ModelAndView registerUser(User user) {
         ResponseEntity<?> response= userService.saveUser(user);
         ModelAndView mv=new ModelAndView();
         if (response.getStatusCodeValue()!=200){
