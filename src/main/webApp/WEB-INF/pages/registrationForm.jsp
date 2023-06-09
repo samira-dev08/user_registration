@@ -11,26 +11,28 @@
 <head>
     <meta charset="UTF-8">
     <title>User Registration</title>
+    <link rel="stylesheet"  type="text/css" href="/css/main.css">
 </head>
 <body>
-<h2>User Registration</h2>
-<form action="/user/registration" method="post">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="userName" />
-    </div>
-    <div>
-        <label>User Email:</label>
-        <input type="text" name="userEmail" />
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password" />
-    </div>
+<div class="container">
+    <h1>
+        User Registration
+    </h1>
+    <form action="/user/registration" method="post">
 
-    <div>
-        <button type="submit">Register</button>
-    </div>
-</form>
+        <label><b>Username:</b></label>
+        <input type="text" placeholder="username" name="userName"/>
+        <br>
+
+        <label><b>User Email:</b></label>
+        <input type="text" placeholder="Email" name="userEmail"/>
+        <br>
+        <label><b>Password:</b></label>
+        <input type="password" placeholder="password" name="password"/>
+        <br>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </form>
+</div>
 </body>
 </html>
