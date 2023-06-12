@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Error</title>
+    <link rel="stylesheet"  type="text/css" href="/css/main.css">
 </head>
 <body>
 <c:out value="${message}"></c:out>

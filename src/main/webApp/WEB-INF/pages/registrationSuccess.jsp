@@ -10,8 +10,9 @@
 <html>
 <head>
   <title>Success</title>
+  <link rel="stylesheet"  type="text/css" href="/css/main.css">
 </head>
 <body>
-<c:out value="${userName}+success registered"></c:out>
+<c:out value="${userName}, you are success registered"></c:out>
 </body>
 </html>
